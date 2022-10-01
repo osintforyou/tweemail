@@ -13,7 +13,7 @@ auth = tw.OAuthHandler(my_api_key, my_api_secret)
 api = tw.API(auth, wait_on_rate_limit=True)
 
 # This is the important part. You have to do your research on Twitter and you will receive the latest tweets from all the users, who will be added to the search_query below.
-search_query = "(from:ZelenskyyUa OR from:KyivIndependent OR from:nexta_tv OR from:MarQs__ OR from:NeilPHauer OR from:Conflicts OR from:DefenceU)"
+search_query = "(from:BBCNews OR from:Reuters OR from:cnnbrk OR from:euronews)"
 
 # get tweets from the API
 tweets = tw.Cursor(api.search_tweets,
